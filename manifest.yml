@@ -1,0 +1,11 @@
+applications:
+- path: .
+  memory: 128M
+  instances: 1
+  domain: eu-gb.mybluemix.net
+  name: customerApp
+  host: customerapp
+  disk_quota: 1024M
+  services:
+  - Conversation-conversationApp
+  buildpack: php_buildpack
