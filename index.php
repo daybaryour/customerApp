@@ -1,21 +1,106 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>PHP Starter Application</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<link rel="stylesheet" href="style.css" />
+    <meta charset="utf-8">
+    <!--  This file has been downloaded from bootdey.com    @bootdey on twitter -->
+    <!--  All snippets are MIT license http://bootdey.com/license -->
+    <!-- 
+        The codes are free, but we require linking to our web site.
+        Why to Link?
+        A true story: one girl didn't set a link and had no decent date for two years, and another guy set a link and got a top ranking in Google! 
+        Where to Put the Link?
+        home, about, credits... or in a good page that you want
+        THANK YOU MY FRIEND!
+    -->
+    <title>messages chat widget - Bootdey.com</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/app.css">
+    <style type="text/css" ></style>
 </head>
 <body>
-	<table>
-		<tr>
-			<td style='width: 30%;'>
-				<img class = 'newappIcon' src='images/newapp-icon.png'>
-			</td>
-			<td>
-				<h1 id = "message"><?php echo "Hello World!"; ?></h1>
-				<p class='description'></p> Thanks for creating a <span class="blue">PHP Starter Application</span>.
-			</td>
-		</tr>
-	</table>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<div class="container">
+    <div class="col-md-12 col-lg-6">
+        <div class="panel">
+            <!--Heading-->
+            <div class="panel-heading">
+                <div class="panel-control">
+                    <div class="btn-group">
+                        <button class="btn btn-default" type="button" data-toggle="collapse" data-target="#demo-chat-body"><i class="fa fa-chevron-down"></i></button>
+                        <button type="button" class="btn btn-default" data-toggle="dropdown"><i class="fa fa-gear"></i></button>
+                        <ul class="dropdown-menu dropdown-menu-right">
+                            <li><a href="#">Available</a></li>
+                            <li><a href="#">Busy</a></li>
+                            <li><a href="#">Away</a></li>
+                            <li class="divider"></li>
+                            <li><a id="demo-connect-chat" href="#" class="disabled-link" data-target="#demo-chat-body">Connect</a></li>
+                            <li><a id="demo-disconnect-chat" href="#" data-target="#demo-chat-body">Disconect</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <h3 class="panel-title">Chat</h3>
+            </div>
+    
+            <!--Widget body-->
+            <div id="demo-chat-body" class="collapse in">
+                <div class="nano has-scrollbar" style="height:380px">
+                    <div class="nano-content pad-all" tabindex="0" style="right: -17px;">
+                        <ul class="list-unstyled media-block">
+                            <li class="mar-btm">
+                                <div class="media-left">
+                                    <img src="http://bootdey.com/img/Content/avatar/avatar1.png" class="img-circle img-sm" alt="Profile Picture">
+                                </div>
+                                <div class="media-body pad-hor">
+                                    <div class="speech">
+                                        <a href="#" class="media-heading">Watson</a>
+                                        <p>Hi i'm watson, how can I help you today ?</p>
+                                        <p class="speech-time">
+                                        <i class="fa fa-clock-o fa-fw"></i>09:23AM
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="mar-btm hide">
+                                <div class="media-right">
+                                    <img src="http://bootdey.com/img/Content/avatar/avatar2.png" class="img-circle img-sm" alt="Profile Picture">
+                                </div>
+                                <div class="media-body pad-hor speech-right">
+                                    <div class="speech">
+                                        <a href="#" class="media-heading">Customer</a>
+                                        <p class="response"></p>
+                                        <p class="speech-time">
+                                            <i class="fa fa-clock-o fa-fw"></i> 09:23AM
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                <div class="nano-pane"><div class="nano-slider" style="height: 141px; transform: translate(0px, 0px);"></div></div></div>
+    
+                <!--Widget footer-->
+                <div class="panel-footer">
+                    <div class="row">
+                        <div class="col-xs-9">
+                            <input type="text" placeholder="Enter your text" class="form-control chat-input">
+                        </div>
+                        <div class="col-xs-3">
+                            <button class="btn btn-primary btn-block" id="submit" type="submit">Send</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/app.js"></script>
+<script type="text/javascript">
+    
+</script>
 </body>
 </html>
